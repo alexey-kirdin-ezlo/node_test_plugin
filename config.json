@@ -1,0 +1,49 @@
+{
+    "id": "node_test_plugin",
+    "version": "1.0",
+    "meta": {
+        "name": {
+            "text": "Node test plugin"
+        },
+        "description": {
+            "text": "This plugin will create a fake switch with an item upon installation."
+        },
+        "author": {
+            "text": "Ezlo Cloud Device Integration team"
+        },
+        "type": "node",
+        "language": "lua",
+        "placement": [
+            "static",
+            "custom"
+        ]
+    },
+    "type": "gateway",
+    "dependencies": {
+        "firmware": "2.0",
+        "addons": [
+            {
+                "id": "lua",
+                "version": "1.0"
+            }
+        ]
+    },
+    "permissions": [
+        "core",
+        "http",
+        "json",
+        "logging",
+        "storage",
+        "timer"
+    ],
+    "executionPolicy": "restoreLastScriptState",
+    "startup": "scripts/startup",
+    "teardown": "scripts/teardown",
+    "gateway": {
+        "name": "Node test plugin",
+        "label": "Node test plugin",
+        "forceRemoveDeviceCommand": "HUB:node_test_plugin/scripts/delete_device",
+        "setItemValueCommand": "HUB:node_test_plugin/scripts/set_item_value",
+        "setItemValueResponsePolicy": "auto"
+    }
+}

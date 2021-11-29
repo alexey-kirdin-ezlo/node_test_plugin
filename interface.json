@@ -1,0 +1,23 @@
+{
+    "configuration": {
+        "type": "static",
+        "script": "HUB:node_test_plugin/configs/account",
+        "placement": "device,plugin",
+        "inputs": [
+            {
+                "name": "Username",
+                "description": "Fake Account Username",
+                "required": true,
+                "field": "username",
+                "type": "string"
+            },
+            {
+                "name": "Password",
+                "description": "Fake Account Password",
+                "required": true,
+                "field": "password",
+                "type": "string"
+            }
+        ]
+    }
+}
