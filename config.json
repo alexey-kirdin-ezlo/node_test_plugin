@@ -13,10 +13,13 @@
         },
         "type": "node",
         "language": "lua",
-        "placement": [
-            "static",
-            "custom"
-        ]
+        "placement": {
+            "static": true,
+            "custom": true
+        },
+        "prefix": "pluginPrefix",
+        "id": "node_test_plugin",
+        "version": "1.1"
     },
     "type": "gateway",
     "dependencies": {

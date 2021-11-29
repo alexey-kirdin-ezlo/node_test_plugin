@@ -9,14 +9,16 @@
                 "description": "Fake Account Username",
                 "required": true,
                 "field": "username",
-                "type": "string"
+                "type": "string",
+                "format": "string"
             },
             {
                 "name": "Password",
                 "description": "Fake Account Password",
                 "required": true,
                 "field": "password",
-                "type": "string"
+                "type": "string",
+                "format": "password"
             }
         ]
     }
