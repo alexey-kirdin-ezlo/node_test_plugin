@@ -9,8 +9,7 @@
                 "description": "Fake Account Username",
                 "required": true,
                 "field": "username",
-                "type": "string",
-                "format": "string"
+                "type": "string"
             },
             {
                 "name": "Password",

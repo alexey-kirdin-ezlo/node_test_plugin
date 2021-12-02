@@ -3,7 +3,7 @@
     "version": "1.0",
     "meta": {
         "name": {
-            "text": "Node test plugin"
+            "text": "Node test plugin (updated)"
         },
         "description": {
             "text": "This plugin will create a fake switch with an item upon installation."
@@ -17,9 +17,8 @@
             "static": true,
             "custom": true
         },
-        "prefix": "pluginPrefix",
-        "id": "node_test_plugin",
-        "version": "1.1"
+        "prefix": "",
+        "dbg-empty-prefix": "for debug purposes, fw+cloud don't support prefixes yet"
     },
     "type": "gateway",
     "dependencies": {
